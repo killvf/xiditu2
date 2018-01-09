@@ -69,6 +69,19 @@
             </div>
         </div>
     </div>
+
+    <div class="head-file">
+        <div class="file-back">
+            <img class="leftImg1" id="leftClick1" src="./resource/img/close.png" alt="">
+            <div class="head-file-list">
+                <a href="#" class="active">致研</a>
+                <a href="#">致研</a>
+                <a href="#">致研</a>
+                <a href="#">致研</a>
+                <a href="#">致研</a>
+            </div>
+        </div>
+    </div>
 </header>
 <div class="hearder-wrap opacity">
 
@@ -209,9 +222,10 @@
 <script type="text/javascript">
     var sumNum = 0;
     require(['jquery', 'frontCommon'], function($, fc) {
-        $("#leftClick").click(function () {
+
+        $("#leftClick,#leftClick1").click(function () {
             $('.current').toggleClass('active')
-        })
+        });
     });
 </script>
 </body>

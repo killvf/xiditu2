@@ -70,6 +70,19 @@
             </div>
         </div>
     </div>
+
+    <div class="head-file">
+        <div class="file-back">
+            <img class="leftImg1" id="leftClick1" src="./resource/img/close.png" alt="">
+            <div class="head-file-list">
+                <a href="#" class="active">致研</a>
+                <a href="#">致研</a>
+                <a href="#">致研</a>
+                <a href="#">致研</a>
+                <a href="#">致研</a>
+            </div>
+        </div>
+    </div>
 </header>
 <div class="hearder-wrap opacity heard-fixed">
 
@@ -107,13 +120,11 @@
     </div>
     <!-- 链接  end -->
     <div class="sub-nav-wrap">
-        <div class="wrap-1200 sub-nav">
-            <a href="#" >投资理财</a>
-            <a href="#" menu="club" >讲座沙龙</a>
-            <a href="#" >健康运动</a>
-            <a href="#" >生活休闲</a>
-            <a href="#" >爱心公益</a>
-        </div>
+        <ul class="sub-nav" id="sub-nav">
+            <li class ="active" data-menuanchor="club-section1" ><a href="#club-section1">品牌简介</a></li>
+            <li data-menuanchor="club-section2"><a href="#club-section2">品牌愿景</a></li>
+            <li data-menuanchor="club-section3"><a href="#club-section3">品牌大事记</a></li>
+        </ul>
     </div>
 
 </div>
@@ -167,9 +178,10 @@
             id: '#club'
         })
 
-        $("#leftClick").click(function () {
+
+        $("#leftClick,#leftClick1").click(function () {
             $('.current').toggleClass('active')
-        })
+        });
     });
 </script>
 </body>

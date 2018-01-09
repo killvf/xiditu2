@@ -70,6 +70,19 @@
             </div>
         </div>
     </div>
+
+    <div class="head-file">
+        <div class="file-back">
+            <img class="leftImg1" id="leftClick1" src="./resource/img/close.png" alt="">
+            <div class="head-file-list">
+                <a href="#" class="active">致研</a>
+                <a href="#">致研</a>
+                <a href="#">致研</a>
+                <a href="#">致研</a>
+                <a href="#">致研</a>
+            </div>
+        </div>
+    </div>
 </header>
 <div class="hearder-wrap opacity heard-fixed">
 
@@ -127,7 +140,6 @@
                 <h3 hStyle="fadeInLeft1"><span>品牌简介</span></h3>
                 <span class="tit" titStyle="fadeInLeft1">喜地农链是由香港喜地控股集团倾力打造，以“助力食材供需，链动农业价值”为核心，以“订制农业 私享生活”为目标，依托于线上电商平台与线下自有农业基地（四川南充3万亩自有生态农业园、贵州贵定10万亩农业生态园等），打造以科技农业为核心驱动力，联动农产品加工、乡村旅游、乡村物流、互联网+为一体的电子商务平台。为改善中国食品安全现状，成为中国优质食品提供者而努力；我们希望能与你一起，共同行动，建设优质食品生态链，让生活原汁原味。
                     </br>喜地农链还是为中小餐饮企业提供一站式、全品类食材采购的服务商，通过与一些优秀食品直属产地进行直采合作和喜地农业自有的万亩生态农业产业园，依托于喜地自建的冷链物流与终端配送体系，我们将为商家提供低于市场价格的同品类、品质产品，让商家再也不用为采购发愁。
-                    </br>喜地农链依托自有农业基地，通过“互联网+”农场服务，为客户提供私人订制的现代农业生活，让用户感受“坐拥一亩三分地，纵享春夏秋冬趣”的生活乐趣，缔造绿色健康之美，尽享品质生活。
                     </span>
             </div>
         </div>
@@ -215,9 +227,9 @@
             menu: '#sub-nav',
         })
 
-        $("#leftClick").click(function () {
+        $("#leftClick,#leftClick1").click(function () {
             $('.current').toggleClass('active')
-        })
+        });
         $(".nextTcl").click(function () {
             $.fn.fullpage.moveSectionDown();
         });

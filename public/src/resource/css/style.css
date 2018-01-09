@@ -46,6 +46,7 @@
 
 .leftUl {
     width: 100px;
+    height: 0;
     position: absolute;
     top: 100px;
     left: -5px;
@@ -76,7 +77,9 @@
     z-index: 99;
     top: 70px;
 }
-
+.leftNav .leftFist:hover ~ .leftUl{
+    height: auto;
+}
 .leftImg {
     position: absolute;
     top: 30px;
@@ -142,7 +145,7 @@ a:focus, a:hover, a:active {
 }
 
 .current {
-    border-right: 1px solid #dedede
+    border-right: 0
 }
 
 .news-list dl dd h3 a:hover {
@@ -537,6 +540,195 @@ a:focus, a:hover, a:active {
 .sub-nav li a{
     padding: 4px 8px 6px;
     border-radius: 3px;
+}
+.head-file{
+    display: none;
+}
+.head-box{
+    position: relative;
+}
+.file-back{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    padding: 1px;
+    position: relative;
+}
+.head-file{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 0 0 240px;
+    z-index: 199;
+}
+.head-file-list{
+    padding-bottom: 3vh;
+    margin-bottom: 3vh;
+}
+.head-file-list a{
+    display: block;
+    width: 100%;
+    line-height: 7vh;
+    font-size: 14px;
+    color: #fff;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.head-file-list a.active{
+    background: #00e0b8;
+}
+.head-file-list a:nth-of-type(1){
+    margin-top: 10vh;
+}
+/* ===== media  ===== */
+@media screen and (max-width:768px){
+    .navFall{
+        margin-right: 150px;
+    }
+    .hearder .nav li{
+        margin-left: 20px;
+    }
+    .sub-nav-wrap{
+        display: none;
+    }
+    .club-text1 .tit {
+        max-height: 130px;
+    }
+    .sub-nav li{
+        margin-right: 5px;
+    }
+    .pro-text span.tit, .club-tit span.tit, .club-text span.tit{
+        font-size: 10px;
+        line-height: 16px;
+    }
+    .club-text h3 span{
+        padding: 10px 15px;
+        border: 2px solid #00e0b8;
+    }
+}
+@media screen and (max-width: 500px){
+    .news{
+        width: 100%;
+    }
+    .footer-wrap{
+        width: 100%;
+    }
+    .about-list h3, .index-text h3 {
+        font-size: 18px!important;
+    }
+    .titBase {
+        font-size: 30px;
+        line-height: 60px;
+    }
+    .titBase:after {
+        height: 2px;
+    }
+    .index-text span, .join-tips span{
+        color: #666;
+    }
+    .titBom {
+        font-size: 12px;
+        border-radius: 16px;
+        border: 1px solid #00dfb9;
+        height: 33px;
+        line-height: 33px!important;
+        width: 90px;
+        margin: 0 60px;
+    }
+    .fp-controlArrow.fp-prev{
+        margin-left: 0;
+    }
+    .fp-controlArrow.fp-next{
+        margin-right: 0;
+        width: 20px;
+        height: 20px;
+    }
+    .hearder .logo img {
+        height: 50px;
+        width: auto;
+    }
+    .leftFist span{
+        height: 50px;
+        line-height: 50px;
+        font-size: 12px;
+    }
+    .leftImg{
+        left: 95px;
+        top: 15px;
+        width: 20px;
+        height: 20px;
+    }
+    .leftImg1{
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        width: 20px;
+        height: 20px;
+    }
+    .leftUl{
+        top: 80px;
+        font-size: 12px;
+        line-height: 25px;
+        width: 80px;
+    }
+    .leftNav .leftFist:hover ~ .leftUl, .leftUl:hover{
+        top: 40px;
+    }
+    .leftFist{
+        width: 80px;
+        margin: 0;
+    }
+    .leftNav{
+        right: 50px;
+    }
+    header[role=heading]{
+        width: 100%;
+        left: -100%;
+    }
+    .head-file{
+        display: block;
+    }
+    .join-tips{
+        display: block;
+        margin-top: 60px;
+        padding: 10px 20px;
+    }
+    .join-tips h3{
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        line-height: 30px;
+        font-size: 18px;
+    }
+    .join-tips p{
+        font-size: 14px;
+        line-height: 26px;
+    }
+    .join-tips .about-pic{
+        width: 100%;
+    }
+    .join-tips .about-pic img{
+        width: 100%;
+        height: auto;
+    }
+    .join-tips .about-pic-wrap dl{ width: 100%; padding: 2% 3%; height: auto; margin-bottom: 10px;}
+    .join-tips .about-pic-wrap dl dd h4{ font-size: 16px;}
+    .join-tips .about-pic-wrap dl dd h5{ font-size: 14px;}
+    .bgf .about-list h3, .bgf .about-list p{
+        padding: 0 20px;
+    }
+    .join-tips ul li{
+        width: 100%;
+        ma
+    }
+    .join-tips ul li:nth-child(3n-1){
+        margin: 30px 0;
+    }
 }
 
 
