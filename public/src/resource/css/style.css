@@ -535,7 +535,7 @@ a:focus, a:hover, a:active {
     margin: 0;
 }
 .sub-nav li a{
-    padding: 4px 8px;
+    padding: 4px 8px 6px;
     border-radius: 3px;
 }
 
