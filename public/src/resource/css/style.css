@@ -50,17 +50,14 @@
     top: 100px;
     left: -5px;
     background: #FFF;
-    border-radius: 10px;
+    border-radius: 4px;
     line-height: 30px;
     font-size: 14px;
     text-align: center;
     overflow: hidden;
-    z-index: -9999;
     opacity: 0;
     transition: all .3s;
-    -moz-box-shadow: 2px 0px 2px #B0B0B0;
-    -webkit-box-shadow: 2px 0px 2px #B0B0B0;
-    box-shadow: 2px 0px 2px #B0B0B0;
+    border: 1px solid rgba(0,0,0,.1);
 }
 
 .leftUl li {
@@ -536,6 +533,10 @@ a:focus, a:hover, a:active {
 .hearder .logo{
     width: 90px;
     margin: 0;
+}
+.sub-nav li a{
+    padding: 4px 8px;
+    border-radius: 3px;
 }
 
 
