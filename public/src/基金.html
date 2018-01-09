@@ -107,53 +107,59 @@
     </div>
     <!-- 链接  end -->
     <div class="sub-nav-wrap">
-        <div class="wrap-1200 sub-nav">
-            <a href="#" >投资理财</a>
-            <a href="#" menu="club" >讲座沙龙</a>
-            <a href="#" >健康运动</a>
-            <a href="#" >生活休闲</a>
-            <a href="#" >爱心公益</a>
-        </div>
+        <ul class="sub-nav" id="sub-nav">
+            <li class ="active" data-menuanchor="club-section1" ><a href="#club-section1">公司简介</a></li>
+            <li data-menuanchor="club-section2"><a href="#club-section2">投资顾问</a></li>
+            <li data-menuanchor="club-section3"><a href="#club-section3">风险投资</a></li>
+            <li data-menuanchor="club-section4"><a href="#club-section4">股权投资</a></li>
+            <li data-menuanchor="club-section5"><a href="#club-section5">并购</a></li>
+        </ul>
     </div>
 
 </div>
 
-<div id="fullpage">
-    <div class="section" id="club-section1" style="background:url('./resource/img/club-bg01.jpg');">
+<div id="fullpage" class="fund">
+    <div class="section" id="fullpage-section1" style="background:url('./resource/img/club-bg01.jpg');">
+        <div class="full-wrap">
+            <div class="club-text club-text1">
+                <h3 hStyle="fadeInLeft1"><span>公司简介</span></h3>
+                <span class="tit" titStyle="fadeInLeft1">深圳赤鼎基金管理有限公司成立于2015年，位于深圳。主要业务方向为投资顾问、风险投资、股权投资和并购。</span>
+            </div>
+        </div>
+        <div class="banner-down nextTcl"><i class="fa fa-angle-down"></i></div>
+    </div>
+    <div class="section" id="fullpage-section2" style="background:url('./resource/img/club-bg01.jpg');">
         <div class="full-wrap">
             <div class="club-text club-text2 fl">
-                <h3 hStyle="fadeInLeft1"><span>守护财富，专业规划</span></h3>
-                <span class="tit" titStyle="fadeInLeft1">正如米兰•昆德拉所说“在时间的乱山碎石中流过，两岸的景致并不重要，重要的是溪流将流向沃野还是沙漠”。我们的使命是所有投资者的财富最终都能流向沃野！</span>
-
+                <h3 hStyle="fadeInLeft1"><span>投资顾问</span></h3>
+                <span class="tit" titStyle="fadeInLeft1">主要为客户提供专业化的投资服务。</span>
             </div>
         </div>
+        <div class="banner-down nextTcl"><i class="fa fa-angle-down"></i></div>
     </div>
-    <div class="section" id="club-section2" style="background:url('./resource/img/club-bg01.jpg');">
+    <div class="section" id="fullpage-section3" style="background:url('./resource/img/club-bg01.jpg');">
         <div class="full-wrap">
             <div class="club-text club-text3 fr">
-                <h3 hStyle="fadeInLeft1"><span>守护财富，专业规划</span></h3>
-                <span class="tit" titStyle="fadeInRight1">分享、交流、碰撞、启示，求变创新，持态律己，时刻保持学习充电，迎接每一个新挑战！</span>
-
+                <h3 hStyle="fadeInLeft1"><span>风险投资</span></h3>
+                <span class="tit" titStyle="fadeInRight1">主要投资方向为符合国家产业导向和科技发展趋势的创新型创业企业。</span>
             </div>
         </div>
+        <div class="banner-down nextTcl"><i class="fa fa-angle-down"></i></div>
     </div>
-    <div class="section" id="club-section3" style="background:url('./resource/img/club-bg01.jpg');">
-        <div>
-            <div class="footer-wrap active">
-                <div class="wrap-1200">
-                    <div class="footer clearfix">
-                        <div class="wx fl"><img src="./resource/img/index-titlefall.jpg" width="127" height="127" alt="" title=""/></div>
-                        <div class="about fr">
-                            <p>香港喜地国际控股有限公司&nbsp;&nbsp;<a href="http://www.miitbeian.gov.cn/" target="_blank"> 粤ICP备XXXXXXXX号</a><br />TEL:0755-555555555<br />ADD:深圳市南山区梦海大道卓越.前海壹号B栋2707室</p>
-                        </div>
-                    </div>
-                </div>
+    <div class="section" id="fullpage-section4" style="background:url('./resource/img/club-bg01.jpg');">
+        <div class="full-wrap">
+            <div class="club-text club-text4 fl">
+                <h3 hStyle="fadeInLeft1"><span>股权投资</span></h3>
+                <span class="tit" titStyle="fadeInLeft1">主要投资方向为符合国家产业导向和科技发展趋势的成长型企业。</span>
             </div>
         </div>
+        <div class="banner-down nextTcl"><i class="fa fa-angle-down"></i></div>
+    </div>
+    <div class="section" id="fullpage-section5" style="background:url('./resource/img/club-bg01.jpg');">
         <div class="full-wrap">
-            <div class="club-text club-text6 fl">
-                <h3 hStyle="fadeInLeft1"><span>守护财富，专业规划</span></h3>
-                <span class="tit" titStyle="fadeInLeft1">人生各种际遇，生活热点每天在变，不变的是致远金控“金融为善”的初心，投身公益，萤火虽微，世界因你更美丽。</span>
+            <div class="club-text club-text5 fr">
+                <h3 hStyle="fadeInLeft1"><span>并购</span></h3>
+                <span class="tit" titStyle="fadeInRight1">主要投资方向为为符合国家产业导向和科技发展趋势的成长型企业和不良资产包。</span>
             </div>
         </div>
     </div>
@@ -164,12 +170,17 @@
 <script type="text/javascript">
     require(['jquery', 'frontCommon'], function($, fc) {
         fc.fullpage({
-            id: '#club'
+            id: "#fullpage",
+            anchors: ["club-section1", "club-section2", "club-section3", "club-section4", "club-section5", "club-section6", "club-section7"],
+            menu: '#sub-nav',
         })
 
         $("#leftClick").click(function () {
             $('.current').toggleClass('active')
         })
+        $(".nextTcl").click(function () {
+            $.fn.fullpage.moveSectionDown();
+        });
     });
 </script>
 </body>

@@ -1,8 +1,4 @@
 
-#fp-nav {
-    display: none;
-}
-
 .rel {
     position: relative;
 }
@@ -174,9 +170,6 @@ a:focus, a:hover, a:active {
     color: #FFF;
 }
 
-.sub-nav a {
-    padding: 5px 10px;
-}
 
 .footer-wrap.active {
     position: absolute;
@@ -185,9 +178,6 @@ a:focus, a:hover, a:active {
     z-index: 99;
 }
 
-.sub-nav {
-    padding-right: 140px;
-}
 
 .join-tips {
     width: 100%;

@@ -49,8 +49,7 @@ define('frontCommon', [ 'jquery' ], function($) {
 		fullpage : function(options) {
 			options = $.extend({
 				container: '#fullpage',
-				anchors: ["section1", "section2", "section3", "section4", "section5", "section6"],
-				navigation: true,
+				anchors: ["section1", "section2", "section3", "section4", "section5", "section6", "section7"],
 				css3:true,
                 loopHorizontal: true,
 				keyboardScrolling: true,
@@ -60,42 +59,10 @@ define('frontCommon', [ 'jquery' ], function($) {
 					var titStyle = $(element).find(".tit").attr("titStyle");
 					var linkStyle = $(element).find(".more").attr("linkStyle");
 					var hStyle = $(element).find("h3").attr("hStyle");
-					if (index == "1") {
-						$(element).find("h3").addClass(hStyle);
-						$(element).find(".icon").addClass(iconStyle);
-						$(element).find(".tit").addClass(titStyle);
-						$(element).find(".more").addClass(linkStyle)
-					}
-					if (index == "2") {
-						$(element).find("h3").addClass(hStyle);
-						$(element).find(".icon").addClass(iconStyle);
-						$(element).find(".tit").addClass(titStyle);
-						$(element).find(".more").addClass(linkStyle)
-					}
-					if (index == "3") {
-						$(element).find("h3").addClass(hStyle);
-						$(element).find(".icon").addClass(iconStyle);
-						$(element).find(".tit").addClass(titStyle);
-						$(element).find(".more").addClass(linkStyle)
-					}
-					if (index == "4") {
-						$(element).find("h3").addClass(hStyle);
-						$(element).find(".icon").addClass(iconStyle);
-						$(element).find(".tit").addClass(titStyle);
-						$(element).find(".more").addClass(linkStyle)
-					}
-					if (index == "5") {
-						$(element).find("h3").addClass(hStyle);
-						$(element).find(".icon").addClass(iconStyle);
-						$(element).find(".tit").addClass(titStyle);
-						$(element).find(".more").addClass(linkStyle)
-					}
-					if (index == "6") {
-						$(element).find("h3").addClass(hStyle);
-						$(element).find(".icon").addClass(iconStyle);
-						$(element).find(".tit").addClass(titStyle);
-						$(element).find(".more").addClass(linkStyle)
-					}
+					$(element).find("h3").addClass(hStyle);
+					$(element).find(".icon").addClass(iconStyle);
+					$(element).find(".tit").addClass(titStyle);
+					$(element).find(".more").addClass(linkStyle)
 				},
 				onLeave: function(index, direction) {
 					var element = options.id + "-section" + index;
@@ -103,42 +70,10 @@ define('frontCommon', [ 'jquery' ], function($) {
 					var titStyle = $(element).find(".tit").attr("titStyle");
 					var linkStyle = $(element).find(".more").attr("linkStyle");
 					var hStyle = $(element).find("h3").attr("hStyle");
-					if (index == "1") {
-						$(element).find("h3").removeClass(hStyle);
-						$(element).find(".icon").removeClass(iconStyle);
-						$(element).find(".tit").removeClass(titStyle);
-						$(element).find(".more").removeClass(linkStyle)
-					}
-					if (index == "2") {
-						$(element).find("h3").removeClass(hStyle);
-						$(element).find(".icon").removeClass(iconStyle);
-						$(element).find(".tit").removeClass(titStyle);
-						$(element).find(".more").removeClass(linkStyle)
-					}
-					if (index == "3") {
-						$(element).find("h3").removeClass(hStyle);
-						$(element).find(".icon").removeClass(iconStyle);
-						$(element).find(".tit").removeClass(titStyle);
-						$(element).find(".more").removeClass(linkStyle)
-					}
-					if (index == "4") {
-						$(element).find("h3").removeClass(hStyle);
-						$(element).find(".icon").removeClass(iconStyle);
-						$(element).find(".tit").removeClass(titStyle);
-						$(element).find(".more").removeClass(linkStyle)
-					}
-					if (index == "5") {
-						$(element).find("h3").removeClass(hStyle);
-						$(element).find(".icon").removeClass(iconStyle);
-						$(element).find(".tit").removeClass(titStyle);
-						$(element).find(".more").removeClass(linkStyle)
-					}
-					if (index == "6") {
-						$(element).find("h3").removeClass(hStyle);
-						$(element).find(".icon").removeClass(iconStyle);
-						$(element).find(".tit").removeClass(titStyle);
-						$(element).find(".more").removeClass(linkStyle)
-					}
+					$(element).find("h3").removeClass(hStyle);
+					$(element).find(".icon").removeClass(iconStyle);
+					$(element).find(".tit").removeClass(titStyle);
+					$(element).find(".more").removeClass(linkStyle)
 				},
                 afterSlideLoad: function (anchorLink,index,slideIndex,direction) {
                     var element = options.id + "-section" + index;
@@ -146,12 +81,10 @@ define('frontCommon', [ 'jquery' ], function($) {
                     var titStyle = $(element).find(".tit").attr("titStyle");
                     var linkStyle = $(element).find(".more").attr("linkStyle");
                     var hStyle = $(element).find("h3").attr("hStyle");
-                    if (index == "1") {
                         $(element).find("h3").addClass(hStyle);
                         $(element).find(".icon").addClass(iconStyle);
                         $(element).find(".tit").addClass(titStyle);
                         $(element).find(".more").addClass(linkStyle)
-                    }
                 },
                 onSlideLeave: function (anchorLink,index,slideIndex,direction) {
                     var element = options.id + "-section" + index;
