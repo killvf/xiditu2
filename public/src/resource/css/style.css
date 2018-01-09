@@ -724,7 +724,6 @@ a:focus, a:hover, a:active {
     }
     .join-tips ul li{
         width: 100%;
-        ma
     }
     .join-tips ul li:nth-child(3n-1){
         margin: 30px 0;
